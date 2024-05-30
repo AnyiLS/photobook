@@ -218,7 +218,7 @@ const CameraScreen = () => {
 				<canvas
 					className="animated fadeIn"
 					id="photo"
-					width="700"
+					width="670"
 					height="350"
 					style={{
 						display: photoTaken ? 'block' : 'none',
