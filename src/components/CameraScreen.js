@@ -205,6 +205,7 @@ const CameraScreen = () => {
 						id="video"
 						controls
 						ref={videoRef}
+            playsInline
 						autoPlay></video>
 				)}
 				<img
