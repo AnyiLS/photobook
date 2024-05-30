@@ -166,8 +166,9 @@ const CameraScreen = () => {
 
 	React.useEffect(() => {
 		const orientation = window.screen.orientation.type;
-		console.log(document.getElementById('background-image'))
-		if (document.getElementById('background-image') && document.getElementById('background-image').clientWidth > 0 && !orientation.includes('portrait')) {
+		console.log(document.getElementById('background-image') && document.getElementById('background-image').clientWidth > 0)
+		if (document.getElementById('background-image') && document.getElementById('background-image').clientWidth > 0) {
+			console.log(document.getElementById('background-image').clientWidth, document.getElementById('background-image').clientHeight)
 			if (document.getElementById('background-image').clientWidth < document.getElementById('background-image').clientHeight) {
 				setWidth(((1080 * window.innerHeight) / 1920))
 			} else {
@@ -202,7 +203,7 @@ const CameraScreen = () => {
 				style={{ width: width > 0 ? width : 'auto', background: photoTaken ? 'white' : 'black' }}>
 				{!photoTaken && (
 					<video
-						style={{ width: width > 0 ? width : 'auto' }}
+						style={{ width: '100%' }}
 						width="400"
 						height="341"
 						id="video"
