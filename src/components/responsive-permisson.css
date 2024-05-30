@@ -1,0 +1,52 @@
+@media (max-width: 912px) and (orientation: portrait) {
+    .main-container_permisson {
+        background-image: url("../images/fondo-movil.png") !important;
+        background-size: contain;
+    }
+
+    .header_permisson .logo-wrapper_permisson {
+        width: 23% !important;
+        margin-top: 8% !important;
+        margin-right: 1em !important;
+    }
+
+    .main_permisson p {
+        font-size: 1em !important;
+    }
+
+    .main_permisson {
+        margin-top: 30% !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 450px) and (orientation: portrait) {
+    .main_permisson {
+        margin-top: 15% !important;
+        height:  auto !important;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .main-container_permisson {
+        background-size: 100% 100% !important;
+
+    }
+    .main_permisson p {
+        font-size: 1em !important;
+    }
+    .main_permisson {
+        margin-top: 30% !important;
+        height: auto !important;
+    }
+
+    .main_permisson {
+        margin-top: 9% !important;
+        height:  auto !important;
+    }
+
+    .main_permisson .middle_permisson .btn-wrapper_permison {
+        width: 30% !important;
+    }
+
+}

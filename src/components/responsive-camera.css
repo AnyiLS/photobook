@@ -1,0 +1,29 @@
+@media (max-width: 912px) and (orientation: landscape) {
+  .video-wrapper_camera {
+    width: 45% !important;
+    margin-top: 4em !important;
+  }
+
+  .btns-wrapper_camera button,
+  a {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .main-container_camera h2 {
+    font-size: 0.7em !important;
+    position: absolute !important;
+    top: 42% !important;
+    right: 3em !important;
+  }
+
+  .btns-wrapper_camera .try-btn_camera {
+    background-size: contain;
+    width: 20vw !important;
+  }
+
+  .btns-wrapper_camera .save-btn_camera {
+    background-size: contain;
+    width: 14vw !important;
+  }
+}

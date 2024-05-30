@@ -1,0 +1,363 @@
+.main-container_main {
+    background-image: url('../images/fondo.png');
+    background-size: 100% 100%;
+    /* background-color: #ffffff; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+}
+
+.header_main {
+    /* border: 1px solid red; */
+    height: 45vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header_main section {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.header_main .title-section_main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_main .logo-wrapper_main {
+    /* border: 1px solid red; */
+    width: 70%;
+    margin-top: 2%;
+}
+
+.header_main section h1 {
+    cursor: pointer;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6em;
+    transition: 200ms all;
+    font-family: "open-sans", sans-serif;
+}
+
+.header_main section h1:hover {
+    opacity: 0.5;
+}
+
+.textop {
+    color: #374E9A !important;
+    font-family: "open-sans", sans-serif !important;
+    /* margin-top: 10em; */
+}
+
+.textop span {
+    font-family: "open-sans", sans-serif !important;
+}
+
+
+.logo-poto {
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+}
+
+.logo-poto1 {
+    position: absolute;
+    bottom: 86%;
+    right: 5%;
+}
+
+@media (max-width: 915px) and (min-width: 500px) {
+    .logo-poto {
+        position: fixed;
+        width: 10%;
+    }
+
+    .logo-poto1 {
+        position: fixed;
+        width: 10%;
+        bottom: 79%;
+    }
+}
+
+@media (max-width: 915px) and (min-width: 500px) {
+    .header_main .logo-wrapper_main {
+        width: 10% !important;
+        position: fixed;
+        margin-right: 5%;
+    }
+}
+
+.header_main .btn-section_main {
+    height: 60%;
+    align-items: center;
+}
+
+.header_main section .start-wrapper_main {
+    width: 90%;
+    font-size: 10px;
+    margin-top: 5%;
+}
+
+.header_main section .start-wrapper_main img {
+    cursor: pointer;
+}
+
+.main_main {
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_main h2 {
+    width: 30%;
+    color: #374E9A;
+    text-align: center;
+    font-size: 1.3em;
+    background: #fff;
+    border-radius: 60px;
+    font-family: "open-sans", sans-serif;
+}
+
+
+
+.main_main .preview-wrapper_main {
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.main_main .preview-wrapper_main img {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .7);
+}
+
+
+@media screen and (min-width: 550px) {
+    .header_main {
+        height: auto;
+    }
+
+    .header_main .logo-wrapper_main {
+        /* border: 1px solid red; */
+        width: 40%;
+    }
+
+    .main_main {
+        margin-bottom: 30px;
+    }
+
+    .header_main section .start-wrapper_main {
+        width: 50%;
+    }
+
+    .main_main .preview-wrapper_main {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 744px) and (max-width: 1024px) {
+   
+    .main_main h2 {
+        width: 51%;
+    color: #EA0029;
+    text-align: center;
+    font-size: 1.3em !important;
+    background: #fff;
+    border-radius: 60px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 743px) {
+   
+    .main_main h2 {
+        width: 65%;
+    color: #EA0029;
+    text-align: center;
+    font-size: 1em !important;
+    background: #fff;
+    border-radius: 60px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 743px) {
+   
+    .main_main h2 {
+        width: 65%;
+    color: #EA0029;
+    text-align: center;
+    font-size: 1em !important;
+    background: #fff;
+    border-radius: 60px;
+    }
+}
+
+@media screen and (min-width: 750px) and (min-height: 500px) {
+    .main-container_main {
+        justify-content: flex-start;
+    }
+
+    .header_main {
+        height: 35vh;
+    }
+
+    .header_main .logo-wrapper_main {
+        /* border: 1px solid red; */
+        width: 50%;
+    }
+
+    .header_main section {
+        /* border: 1px solid red; */
+    }
+
+    .header_main section h1 {
+        font-size: 2.4em;
+    }
+
+    .header_main section .start-wrapper_main {
+        width: 70%;
+    }
+
+    .main_main {
+        height: 50vh;
+    }
+
+    .main_main h2 {
+        font-size: 2em;
+    }
+
+    .main_main .preview-wrapper_main {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header_main {
+        /* border: 1px solid red; */
+        height: 40vh;
+    }
+
+    .header_main section {
+        padding: 0;
+        width: 100% !important;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .header_main .btn-section_main {
+        width: 63%;
+    }
+
+    .header_main  .title-section_main {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .header_main .logo-wrapper_main {
+        /* border: 1px solid red; */
+        width: 30%;
+    }
+
+    .header_main section .start-wrapper_main {
+        /* border: 1px solid red; */
+        width: 65%;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_main {
+        margin: 0;
+    }
+
+    .main_main h2 {
+        font-size: 1.5em;
+    }
+
+    .main_main .preview-wrapper_main {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header_main {
+        /* border: 1px solid red; */
+        height: 42vh;
+    }
+
+    .header_main .logo-wrapper_main {
+        /* border: 1px solid red; */
+        width: 15%;
+        margin-right: 2em;
+    }
+
+    .header_main .btn-section_main {
+        height: 40%;
+    }
+
+    .header_main section h1 {
+        font-size: 2.1em;
+    }
+
+    .header_main section .start-wrapper_main {
+        /* border: 1px solid red; */
+        width: 40%;
+        padding: 0;
+    }
+
+    .main_main h2 {
+        font-size: 1.8em;
+    }
+
+    .main_main .preview-wrapper_main {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 900px) {
+    .header_main section h1 {
+        /* border: 1px solid red; */
+        font-size: 3em;
+    }
+
+    .header_main section .start-wrapper_main {
+        /* border: 1px solid red; */
+        width: 75%;
+    }
+
+    .main_main h2 {
+        font-size: 2em;
+    }
+
+    .main_main .preview-wrapper_main {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .header_main {
+        height: 40vh;
+    }
+
+    .header_main .logo-wrapper_main {
+        /* border: 1px solid red; */
+        width: 22%;
+    }
+
+    .main_main h2 {
+        font-size: 1.5em;
+    }
+
+    .header_main section h1 {
+        
+    }
+}
