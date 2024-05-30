@@ -160,13 +160,15 @@ const CameraScreen = () => {
 	//Reiniciar camara
 	const restartCamera = () => {
 		// Limpiar canvas, contador de timer y volver a mostrar la camara
-		setPhotoTaken(false)
-		setCounter(3)
-		setShowCounter(false)
+		// setPhotoTaken(false)
+		// setCounter(3)
+		// setShowCounter(false)
 
-		const canvas = document.getElementById('photo')
-		const ctx = canvas.getContext('2d')
-		ctx.clearRect(0, 0, canvas.width, canvas.height)
+		// const canvas = document.getElementById('photo')
+		// const ctx = canvas.getContext('2d')
+		// ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+    window.location.reload();
 	}
 
 	const [width, setWidth] = React.useState(0)
@@ -203,7 +205,6 @@ const CameraScreen = () => {
 						width="400"
 						height="341"
 						id="video"
-						controls
 						ref={videoRef}
             playsInline
 						autoPlay></video>
