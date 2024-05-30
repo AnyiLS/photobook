@@ -69,17 +69,8 @@ const CameraScreen = () => {
 
 		// console.log(cameraPhoto.inputVideoDeviceInfos);
 
-		if (window.innerWidth < 1200) {
-			window.addEventListener('orientationchange', (e) => {
-				const popUp = document.querySelector('.rotatePop')
-
-				if (window.orientation === 0) {
-					popUp.style.display = 'flex'
-				} else {
-					popUp.style.display = 'none'
-				}
-			})
-		}
+		// 
+		
 		// eslint-disable-next-line
 	}, [])
 
@@ -174,15 +165,25 @@ const CameraScreen = () => {
 	const [width, setWidth] = React.useState(0)
 
 	React.useEffect(() => {
-		if (document.getElementById('background-image')) {
-			setWidth(document.getElementById('background-image').clientWidth)
+		const orientation = window.screen.orientation.type;
+		console.log(document.getElementById('background-image'))
+		if (document.getElementById('background-image') && document.getElementById('background-image').clientWidth > 0 && !orientation.includes('portrait')) {
+			if (document.getElementById('background-image').clientWidth < document.getElementById('background-image').clientHeight) {
+				setWidth(((1080 * window.innerHeight) / 1920))
+			} else {
+				setWidth(document.getElementById('background-image') ? document.getElementById('background-image').clientWidth : ((1080 * window.innerHeight) / 1920))
+			}
+			
 
 			window.addEventListener('resize', () => {
-				console.log(document.getElementById('background-image'))
-				setWidth(
-					document.getElementById('background-image').clientWidth
-				)
+				if (document.getElementById('background-image').clientWidth < document.getElementById('background-image').clientHeight) {
+					setWidth(((1080 * window.innerHeight) / 1920))
+				} else {
+					setWidth(document.getElementById('background-image') ? document.getElementById('background-image').clientWidth : ((1080 * window.innerHeight) / 1920))
+				}
 			})
+		} else {
+			setWidth(0)
 		}
 
 		return () => {
